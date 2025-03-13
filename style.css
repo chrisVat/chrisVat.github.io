@@ -1,0 +1,115 @@
+/* ========== RESET & BASE STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  VSCode-ish Dark Theme Colors:
+  - Primary background: #1E1E1E 
+  - Secondary background / containers: #252526
+  - Text: #D4D4D4 
+  - Accent colors: #569CD6, #C586C0, #4EC9B0, #CE9178
+  - Monospaced font for code/editor look
+*/
+body {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: "Consolas", "Courier New", monospace;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========== TOP BAR (VSCode Title/Navigation) ========== */
+.top-bar {
+  background-color: #252526;
+  padding: 10px 20px;
+}
+
+.top-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Align to the right (typical code editor nav) */
+}
+
+.top-bar li {
+  margin-left: 20px;
+}
+
+.top-bar a {
+  text-decoration: none;
+  color: #569cd6; /* Subtle accent color */
+  font-size: 1em;
+  transition: color 0.2s;
+}
+
+.top-bar a:hover {
+  color: #4ec9b0; /* Another accent color on hover */
+}
+
+/* ========== CONTAINER ========== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ========== MAIN CONTENT ========== */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Text Section */
+.text-section {
+  flex: 1;
+  background-color: #252526; /* Slightly different (VSCode editor) background */
+  padding: 20px;
+  border: 1px solid #3c3c3c;
+  border-radius: 4px;
+}
+
+/* ========== PROFILE IMAGE ========== */
+.image-section {
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid #3c3c3c;
+}
+
+/* ========== HEADINGS & PARAGRAPHS ========== */
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  color: #4ec9b0; /* A bright accent to pop */
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Email link styling */
+.email a {
+  color: #c586c0;
+  text-decoration: none;
+}
+
+.email a:hover {
+  color: #ce9178;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.85em;
+  color: #808080; 
+}
